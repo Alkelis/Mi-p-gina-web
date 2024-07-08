@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Completa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#search">Búsqueda</a></li>
+                <li><a href="#images">Imágenes</a></li>
+                <li><a href="#categories">Categorías</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#translator">Traductor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <h2>Búsqueda</h2>
+            <input type="text" id="searchBox" placeholder="Buscar...">
+            <button onclick="performSearch()">Buscar</button>
+            <div id="searchResults"></div>
+        </section>
+        <section id="images">
+            <h2>Imágenes</h2>
+            <input type="file" id="imageUpload" accept="image/*">
+            <div id="uploadedImages"></div>
+        </section>
+        <section id="categories">
+            <h2>Categorías</h2>
+            <ul>
+                <li>Categoría 1</li>
+                <li>Categoría 2</li>
+                <li>Categoría 3</li>
+            </ul>
+        </section>
+        <section id="chat">
+            <h2>Chat</h2>
+            <div id="chatWindow"></div>
+            <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
+            <input type="file" id="chatImageUpload" accept="image/*">
+            <button onclick="sendMessage()">Enviar</button>
+        </section>
+        <section id="translator">
+            <h2>Traductor</h2>
+            <textarea id="textToTranslate" placeholder="Texto a traducir..."></textarea>
+            <button onclick="translateText()">Traducir</button>
+            <div id="translationResult"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
